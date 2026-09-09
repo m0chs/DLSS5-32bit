@@ -1,0 +1,54 @@
+name: Game or setup problem
+description: Report a reproducible setup, rendering, or removal problem.
+title: "[Game name] Short description"
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please describe the observed result. Eligible architecture/API is not a guarantee of game compatibility.
+        Logs stay local unless you attach them. Review user paths and account details before posting.
+  - type: input
+    id: game
+    attributes:
+      label: Game and executable
+      placeholder: Game name, edition/store, Game.exe, offline single-player mode
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: GPU, driver, Windows and graphics API
+      placeholder: RTX 5060 Ti, 616.56, Windows 11, D3D11, 2560x1440
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Toolkit version and changed components/settings
+      placeholder: 0.2.0-beta.1; locked components; work resolution 100%; MSAA off
+    validations:
+      required: true
+  - type: dropdown
+    id: host_test
+    attributes:
+      label: Host test result
+      options:
+        - Not run
+        - Passed (300/300 and neural feature 18)
+        - Failed
+        - Timed out
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps, expected result and actual result
+      description: Include whether scene depth updates, the motion provider is enabled, and the problem changes when effects are toggled.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Relevant log excerpts or reviewed attachments
+      description: Game ReShade/Feeder logs and host ReShade/Feeder logs from the same run are most useful. Do not attach model DLLs, game files or crash dumps containing memory.

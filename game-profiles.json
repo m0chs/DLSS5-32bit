@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "profiles": [
+    {
+      "id": "bo2-campaign",
+      "executable": "t6sp.exe",
+      "name": "Call of Duty: Black Ops II campaign",
+      "steamAppId": 202970,
+      "api": "D3D11",
+      "validation": "Neural evaluation observed; visual/depth validation incomplete."
+    }
+  ],
+  "blockedExecutables": [
+    "t6mp.exe", "t6zm.exe", "csgo.exe", "valorant.exe", "league of legends.exe", "overwatch.exe"
+  ]
+}

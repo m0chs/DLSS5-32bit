@@ -1,0 +1,188 @@
+{
+  "schema": 1,
+  "profile": "x86-d3d10-d3d11-2026-09-09",
+  "assets": [
+    {
+      "id": "reshade",
+      "file": "ReShade_Setup_6.8.0_Addon.exe",
+      "url": "https://reshade.me/downloads/ReShade_Setup_6.8.0_Addon.exe",
+      "sha256": "afe4c8f13048306307983b8b3d41d5bf00a86820440b0e57dea10950e1176445",
+      "kind": "sfx",
+      "entries": [
+        {
+          "source": "ReShade32.dll",
+          "target": "dxgi.dll",
+          "machine": "x86"
+        },
+        {
+          "source": "ReShade64.dll",
+          "target": "host64/dxgi.dll",
+          "machine": "x64"
+        }
+      ]
+    },
+    {
+      "id": "feeder",
+      "file": "DLSS5-Feeder-0.14.0-beta.5.zip",
+      "url": "https://github.com/jlrouzies-fr/DLSS5-Feeder/releases/download/v0.14.0-beta.5/DLSS5-Feeder-0.14.0-beta.5.zip",
+      "sha256": "5f641b1b625ba0fdd23a8e3b16b5d6b173d7bdc34b4405fd8992b78fb1482ab0",
+      "kind": "zip",
+      "entries": [
+        {
+          "source": "dlss5-feed.addon32",
+          "target": "dlss5-feed.addon32",
+          "machine": "x86"
+        },
+        {
+          "source": "host64/dlss5-feed-host64.exe",
+          "target": "host64/dlss5-feed-host64.exe",
+          "machine": "x64"
+        },
+        {
+          "source": "reshade-shaders/Shaders/DLSS5_Feed.fx",
+          "target": "dlss5-shaders/Shaders/DLSS5_Feed.fx"
+        }
+      ]
+    },
+    {
+      "id": "lumenite",
+      "file": "LumeniteFX-f8cbbb4e.zip",
+      "url": "https://codeload.github.com/umar-afzaal/LumeniteFX/zip/f8cbbb4eccfcb7adf0d74bb358ba349272e3c1e9",
+      "sha256": "43220f99fc0ffa0216e01ebd657180f8c9d043c939f760283b896ea257f1b6a2",
+      "kind": "zip",
+      "entries": [
+        {
+          "source": "LumeniteFX-f8cbbb4eccfcb7adf0d74bb358ba349272e3c1e9/Shaders/lumenite_Kernel.fx",
+          "target": "dlss5-shaders/Shaders/lumenite_Kernel.fx"
+        },
+        {
+          "source": "LumeniteFX-f8cbbb4eccfcb7adf0d74bb358ba349272e3c1e9/Shaders/include/lumenite_ColorManagement.fxh",
+          "target": "dlss5-shaders/Shaders/include/lumenite_ColorManagement.fxh"
+        },
+        {
+          "source": "LumeniteFX-f8cbbb4eccfcb7adf0d74bb358ba349272e3c1e9/Shaders/include/lumenite_Compute.fxh",
+          "target": "dlss5-shaders/Shaders/include/lumenite_Compute.fxh"
+        },
+        {
+          "source": "LumeniteFX-f8cbbb4eccfcb7adf0d74bb358ba349272e3c1e9/Shaders/include/lumenite_Helpers.fxh",
+          "target": "dlss5-shaders/Shaders/include/lumenite_Helpers.fxh"
+        },
+        {
+          "source": "LumeniteFX-f8cbbb4eccfcb7adf0d74bb358ba349272e3c1e9/Shaders/include/lumenite_Projections.fxh",
+          "target": "dlss5-shaders/Shaders/include/lumenite_Projections.fxh"
+        },
+        {
+          "source": "LumeniteFX-f8cbbb4eccfcb7adf0d74bb358ba349272e3c1e9/Textures/lumenite_bluenoise256.png",
+          "target": "dlss5-shaders/Textures/lumenite_bluenoise256.png"
+        },
+        {
+          "source": "LumeniteFX-f8cbbb4eccfcb7adf0d74bb358ba349272e3c1e9/LICENSE.md",
+          "target": "dlss5-shaders/LICENSE.md"
+        },
+        {
+          "source": "LumeniteFX-f8cbbb4eccfcb7adf0d74bb358ba349272e3c1e9/NOTICE",
+          "target": "dlss5-shaders/NOTICE"
+        }
+      ]
+    },
+    {
+      "id": "renodx",
+      "file": "renodx-dlss5_4.55.zip",
+      "url": "https://github.com/RankFTW/rhi-repo/releases/download/renodx-dlss5-4.55/renodx-dlss5_4.55.zip",
+      "sha256": "15481c492db76682e9a88917e7f78897351ecf088bfae9bca74a0c5b74ddd033",
+      "kind": "zip",
+      "entries": [
+        {
+          "source": "renodx-dlss5.addon64",
+          "target": "host64/renodx-dlss5.addon64",
+          "machine": "x64",
+          "sha256": "9150097cdee2953cdc9894d2e5606ea5100e6c8f95fc7bb1b407328b4391a07a"
+        }
+      ]
+    },
+    {
+      "id": "dlssnr",
+      "file": "nvngx_dlssnr_310.8.0.zip",
+      "url": "https://github.com/RankFTW/rhi-repo/releases/download/dlssnr-310.8.0/nvngx_dlssnr_310.8.0.zip",
+      "sha256": "388c0a7912e15ec911b9c9e11a692142b11fe387ddf2b637d8c358138fffb3ac",
+      "kind": "zip",
+      "entries": [
+        {
+          "source": "nvngx_dlssnr.dll",
+          "target": "host64/nvngx_dlssnr.dll",
+          "machine": "x64",
+          "sha256": "e16bcf15e16e13f527491cdf7845b2fe6521a738d8f7c9c721866a8496e1fc8e",
+          "signer": "NVIDIA Corporation"
+        }
+      ]
+    },
+    {
+      "id": "dlss",
+      "file": "nvngx_dlss_310.8.0.zip",
+      "url": "https://github.com/RankFTW/rhi-repo/releases/download/dlss-310.8.0/nvngx_dlss_310.8.0.zip",
+      "sha256": "fb481660f7e952b87f91760e3afd7f9dc14cd2c3361b470e948d6346e4323009",
+      "kind": "zip",
+      "entries": [
+        {
+          "source": "nvngx_dlss.dll",
+          "target": "host64/nvngx_dlss.dll",
+          "machine": "x64",
+          "sha256": "c85f971ce023c9f3492fc7455f0b01a24ba18ea39636407a846902c4360b0b7e",
+          "signer": "NVIDIA Corporation"
+        }
+      ]
+    },
+    {
+      "id": "ReShade.fxh",
+      "file": "ReShade.fxh",
+      "url": "https://raw.githubusercontent.com/crosire/reshade-shaders/6db142b4b1a05c764222e5b0bd9a644b7ccfe1dc/Shaders/ReShade.fxh",
+      "sha256": "6dabfbbaf968c3871905d2ea17f96572ff7b1cec01310b5d0e5252b66b30174f",
+      "kind": "file",
+      "entries": [
+        {
+          "source": "ReShade.fxh",
+          "target": "dlss5-shaders/Shaders/ReShade.fxh"
+        }
+      ]
+    },
+    {
+      "id": "ReShadeUI.fxh",
+      "file": "ReShadeUI.fxh",
+      "url": "https://raw.githubusercontent.com/crosire/reshade-shaders/6db142b4b1a05c764222e5b0bd9a644b7ccfe1dc/Shaders/ReShadeUI.fxh",
+      "sha256": "78adf672df47460297eb9fe6dd238d2aafa24510b52b84feb1a745dff70eb901",
+      "kind": "file",
+      "entries": [
+        {
+          "source": "ReShadeUI.fxh",
+          "target": "dlss5-shaders/Shaders/ReShadeUI.fxh"
+        }
+      ]
+    },
+    {
+      "id": "DrawText.fxh",
+      "file": "DrawText.fxh",
+      "url": "https://raw.githubusercontent.com/crosire/reshade-shaders/6db142b4b1a05c764222e5b0bd9a644b7ccfe1dc/Shaders/DrawText.fxh",
+      "sha256": "b79cc4dfb3e98bcf4c06193d00ea7631d74f467f73a4deeeee13e71336d3e680",
+      "kind": "file",
+      "entries": [
+        {
+          "source": "DrawText.fxh",
+          "target": "dlss5-shaders/Shaders/DrawText.fxh"
+        }
+      ]
+    },
+    {
+      "id": "DisplayDepth.fx",
+      "file": "DisplayDepth.fx",
+      "url": "https://raw.githubusercontent.com/crosire/reshade-shaders/6db142b4b1a05c764222e5b0bd9a644b7ccfe1dc/Shaders/DisplayDepth.fx",
+      "sha256": "e2266c47c75dcc30030c8ec68cf62cf16f2aebe1ecdecf0265d91ce65dbd7f32",
+      "kind": "file",
+      "entries": [
+        {
+          "source": "DisplayDepth.fx",
+          "target": "dlss5-shaders/Shaders/DisplayDepth.fx"
+        }
+      ]
+    }
+  ]
+}

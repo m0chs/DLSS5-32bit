@@ -1,0 +1,24 @@
+.work/
+.cache/
+.local/
+reports/private/
+*.dll
+*.exe
+*.addon32
+*.addon64
+*.zip
+*.log
+*.dmp
+*.part
+players/
+__pycache__/
+
+# Local compatibility entrypoints for the original BO2 prototype.
+/BO2-DLSS5.ps1
+/BO2-DLSS5.cmd
+/Start-BO2-DLSS5.cmd
+/Setup-BO2-DLSS5.cmd
+/Disable-BO2-DLSS5.cmd
+/Test-DLSS5-Host.cmd
+/lib/BO2DLSS5.psm1
+/profiles/BO2-DLSS5.ini
