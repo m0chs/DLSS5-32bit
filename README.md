@@ -6,7 +6,7 @@ A small Windows toolkit that sets up **community DLSS 5 neural rendering for eli
 
 ## Get started
 
-1. Download the release ZIP and **extract it** into a normal local folder.
+1. [Download the beta release ZIP](https://github.com/m0chs/DLSS5-32bit/releases) and **extract it** into a normal local folder.
 2. Double-click **`DLSS5-32bit.cmd`**. Choose **1 — Set up**, then paste the full path to the actual game `.exe`.
 3. In the game's graphics settings, select its **DirectX 10/11 mode** if applicable and turn **MSAA off**. Start with SDR and windowed/borderless mode.
 4. Use **offline single-player**, then choose **2 — Play game**. On first use, the helper runs a short GPU test before launching. Its result is reused while host files, settings, GPU and driver remain the same.
