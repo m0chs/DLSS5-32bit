@@ -1,6 +1,6 @@
-# v0.2.0-beta.1 — public review draft
+# v0.2.0-beta.1 — first public beta
 
-A general ReShade/Feeder toolkit for eligible **32-bit DirectX 10/11 games**, prepared for m0chs/DLSS5-32bit. It has not been published.
+A general ReShade/Feeder toolkit for eligible **32-bit DirectX 10/11 games**. This is the first public beta of [m0chs/DLSS5-32bit](https://github.com/m0chs/DLSS5-32bit).
 
 - One menu for selecting a game, setting up, playing, checking, and disabling.
 - PE architecture and import detection; explicit API override for known dynamic-loading games.
