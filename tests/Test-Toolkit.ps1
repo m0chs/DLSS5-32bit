@@ -252,3 +252,4 @@ Assert-True ($siblingExit -ne 0) 'A second executable in the same directory cann
 
 Write-Host "All $script:passed assertions passed. No real game or GPU workload was launched."
 Write-Host "Test artifacts: $runRoot"
+exit 0
